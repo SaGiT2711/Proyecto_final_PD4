@@ -1,0 +1,147 @@
+|-------------------------------------------------------------------------------------------------------------|
+|                                        UNIVERSIDAD DE SONORA                                                |
+|                                            PROYECTO FINAL                                                   |
+|                                       DESARROLLO DE SISTEMAS 4                                              |
+|                               MAESTRO: FEDERICO MIGUEL CIRETT GALAN                                         |
+|                                            INTEGRANTES:                                                     |
+|                                    JULIAN FERNANDO FUENTES TRIAS                                            |
+|                                    URIEL ABRAHAM LOPEZ FLEISCHER                                            |
+|                                      VICTOR ANDRES HORTA FELIX                                              |
+|Instrucciones                                                                                                |
+|Desarrollar un sistema de Control de Ventas en Veterinarias que cuente con acceso a módulos                  |
+|diferenciados por tipo de usuario: Cliente, Usuario, Administrador                                           |
+|Cliente:                                                                                                     |
+|Inicia con pantalla de Login:                                                                                |
+|    User                                                                                                     |
+|    Password:                                                                                                |
+|    Link a "No recuerdo mi password"                                                                         |
+|    Botón de Login                                                                                           |
+|Una vez dentro del sistema, deben aparecerle las siguientes opciones:                                        |
+|    Agendar una cita                                                                                         |
+|    Historial de recetas                                                                                     |
+|    Historial de atención                                                                                    |
+|Agendar una cita:                                                                                            |
+|    Clente selecciona fecha y hora de atención                                                               |
+|    Opcionalmente: Agrega nombre de mascota y tipo de mascota                                                |
+|    Tipo de atención: Veterinaria /Boutique                                                                  |
+|                                                                                                             |
+|Historial de recetas                                                                                         |
+|    Muestra por cliente seleccionado, y ordenado por fecha y hora descendente                                |
+|    Nombre de mascota y medicamento recetado                                                                 |
+|Historial de atención:                                                                                       |
+|    Muestra por cliente seleccionado, y ordenado por fecha y hora descendente                                |
+|    Nombre de mascota y atención recibida                                                                    |
+|                                                                                                             |
+|Usuario:                                                                                                     |
+|Inicia con pantalla de Login:                                                                                |
+|    User                                                                                                     |
+|    Password:                                                                                                |
+|    Link a "No recuerdo mi password"                                                                         |
+|    Botón de Login                                                                                           |
+|Una vez dentro del sistema, deben aparecerle las siguientes opciones:                                        |
+|    Agendar una cita                                                                                         |
+|    Historial de recetas                                                                                     |
+|    Historial de atención                                                                                    |
+|    Agregar una receta                                                                                       |
+|    Agregar una atención                                                                                     |
+|                                                                                                             |
+|Agendar una cita:                                                                                            |
+|    Usuario: Selecciona mascota-cliente (si no existen, los agrega)                                          |
+|    Usuario selecciona fecha y hora de atención                                                              |
+|    Opcionalmente: Agrega nombre de mascota y tipo de mascota                                                |
+|Historial de recetas:                                                                                        |
+|    Selecciona Mascota/Cliente                                                                               |
+|    Muestra por cliente seleccionado, y ordenado por fecha y hora descendente                                |
+|    Nombre de mascota y medicamento recetado                                                                 |
+|Historial de atención:                                                                                       |
+|    Selecciona Mascota/Cliente                                                                               |
+|    Muestra por cliente seleccionado, y ordenado por fecha y hora descendente                                |
+|    Nombre de mascota y atención recibida                                                                    |
+|Agregar una receta:                                                                                          |
+|    Selecciona Mascota/Cliente                                                                               |
+|    Selecciona medicamento, cantidad                                                                         |
+|    Repetir cuantas veces sea necesario                                                                      |
+|    Enviar                                                                                                   |
+|    Liga a Generar un PDF                                                                                    |
+|Agregar una atención:                                                                                        |
+|    Selecciona Mascota/Cliente                                                                               |
+|    Se llena campo de texto con la descripción del mal de la mascota y qué fue lo que se diagnósticolrealizó |
+|    Llenar el campo de sub-total                                                                             |
+|    Lienar automáticamente el campo de IVA (16%)                                                             |
+|    Llenar automáticamente el campo de total (sub-total+IVA)                                                 |
+|    Enviar                                                                                                   |
+|    Liga a Genera un PDF                                                                                     |
+|                                                                                                             |
+|Administrador:                                                                                               |
+|Inicia con pantalla de Login:                                                                                |
+|    User:                                                                                                    |
+|    Password:                                                                                                |
+|    Link a "No recuerdo mi password"                                                                         |
+|    Botón de Login                                                                                           |
+|Una vez dentro del sistema, deben aparecerle las siguientes opciones:                                        |
+|    Agendar una cita                                                                                         |
+|    Historial de recetas                                                                                     |
+|    Historial de atención                                                                                    |
+|    Agregar una receta                                                                                       |
+|    Agregar una atención                                                                                     |
+|    Usuarios                                                                                                 |
+|    Medicinas                                                                                                |
+|    Servicios                                                                                                |
+|    Informe de ventas diarias                                                                                |
+|    Informe de ventas mensuales                                                                              |
+|Usuarios:                                                                                                    |
+|    Lista usuarios existentes                                                                                |
+|    Opción de agregar usuarios                                                                               |
+|    Opción de modificar usuarios                                                                             |
+|Agregar usuarios:                                                                                            |
+|    Nombre corto                                                                                             |
+|    Nombre                                                                                                   |
+|    Email                                                                                                    |
+|    password                                                                                                 |
+|    Tipo: Cliente/Usuario/Administrador                                                                      |
+|Modificar usuario:                                                                                           |
+|    Nombre corto                                                                                             |
+|    Nombre                                                                                                   |
+|    Email                                                                                                    |
+|    Tipo: ClientelUsuario/Administrador                                                                      |
+|Medicinas                                                                                                    |
+|    Listar medicinas existentes                                                                              |
+|    Agregar medicina (descripción y presentación Pomada, Pastillas, Jarabe. y medida: mg, ml)                |
+|    Opción de modificar medicinas                                                                            |
+|Servicios:                                                                                                   |
+|    Listar servicios existentes                                                                              |
+|Informe de ventas diarias:                                                                                   |
+|    Lista de atenciones con sub-totales, IVA y totales                                                       |
+|    Desplegar sumatoria para los 3 valores                                                                   |
+|    Liga a generar PDF                                                                                       |
+|    Informe de ventas mensuales                                                                              |
+|    (Opcional) Desplegar un gráfico de barras o lineas con las ventas diarias del mes                        |
+|    Lista de ventas diarias con sub-totales, IVA y totales (sin detalle)                                     |
+|    Desplegar sumatoria para los 3 valores                                                                   |
+|    Liga a generar PDF                                                                                       |
+|                                                                                                             |
+|El sistema debe contar con archivos de acuerdoa su función:                                                  |
+|    Login.py                                                                                                 |
+|    Menu.py                                                                                                  |
+|    Citas.py                                                                                                 |
+|    Historial.py                                                                                             |
+|    Recetas.py                                                                                               |
+|    Atencion.py                                                                                              |
+|    Usuarios.py                                                                                              |
+|    Informes.py                                                                                              |
+|    Otros.py                                                                                                 |
+|Primeros módulos a realizar                                                                                  |
+|    Login                                                                                                    |
+|    Usuarios                                                                                                 |
+|    Menú                                                                                                     |
+|Siguientes módulos:                                                                                          |
+|    Citas                                                                                                    |
+|    Medicinas                                                                                                |
+|    Servicios                                                                                                |
+|Más Módulos:                                                                                                 |
+|    Agregar Atención                                                                                         |
+|    Agregar Receta                                                                                           |
+|    Historial de Recetas                                                                                     |
+|    Historial de Atenciones                                                                                  |
+|    Informes de ventas                                                                                       |
+|-------------------------------------------------------------------------------------------------------------|
